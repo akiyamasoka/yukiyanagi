@@ -17,6 +17,15 @@
         <p>創価大学GCP多様性グループ</p>
         <a>質問スタート</a>
     </div>
+    
+    {% for post in posts %}
+        <div>
+            <p>published: {{ post.published_data }}</p>
+            <h2><a href="">{{ post.title }}</a></h2>
+            <p>{{ post.text|linebreaksbr }}</p>
+            {{ posts }}
+        </div>
+    {% endfor %}
     <div>
         <h2>
             <p>プロジェクト</p>
