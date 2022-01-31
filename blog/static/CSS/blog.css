@@ -41,16 +41,13 @@ h1, h2, h3, h4 {
     font-size: 11pt;
     margin: 5%;
     padding: 5%;
-    float: inherit;
+    text-align: center;
+    float: right;
 }
 
 .page-header h1 {
-    float: left;
+    margin-right: 50%;
     font-size: 16pt;
-}
-
-.page-header p {
-    float: right;
 }
 
 .green {
@@ -58,7 +55,7 @@ h1, h2, h3, h4 {
     font-size: 24pt;
     color: black;
     margin: 0px;
-    float: inherit;
+    text-align: center;
 }
 
 .not_new_line {
