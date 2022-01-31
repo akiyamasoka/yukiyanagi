@@ -63,15 +63,16 @@ a.btn-radius-solid:hover {
 }
 
 .post {
-    margin-bottom: 70px;
-    display: flex;
-    justify-content: center;
+    color: black;
+    text-decoration: none;
 }
 
 .post p {
-    width: 40%;
-    height: 40%;
+    width: 50%;
+    height: 50%;
     float: left;
+    display: flex;
+    justify-content: center;
 }
 
 .post_button {
