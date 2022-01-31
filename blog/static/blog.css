@@ -75,8 +75,8 @@ a.btn-radius-solid:hover {
 }
 
 .post_button {
-    width: 200px;
-    height: 200px;
+    width: 50%;
+    padding-top: 100%;
     background: yellow;
     border-radius: 50%;
     display: flex;
