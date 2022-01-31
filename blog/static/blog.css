@@ -2,7 +2,7 @@
     margin-left: 40px;
 }
 
-h1, h2, h3 {
+h2, h3 {
     font-family: 'Lobster', cursive;
 }
 
@@ -37,21 +37,21 @@ h1, h2, h3 {
 .page-header, .page-footer {
     background-color: white;
     color: black;
-    font-size: 11pt;
+    font-size: 9pt;
     margin: 5%;
     padding: 5%;
     text-align: center;
-    float: right;
+    float: left;
 }
 
 .page-header h1 {
     margin-right: 50%;
-    font-size: 16pt;
+    font-size: 11pt;
 }
 
 .green {
-    background-color: aquamarine;
-    font-size: 24pt;
+    background-color: green;
+    font-size: 20pt;
     color: black;
     margin: 0px;
     text-align: center;
@@ -59,8 +59,4 @@ h1, h2, h3 {
 
 .not_new_line {
     white-space: nowrap;
-}
-
-p {
-    background-color: black;
 }
