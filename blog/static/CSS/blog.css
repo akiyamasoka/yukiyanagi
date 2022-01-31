@@ -60,3 +60,7 @@ h1, h2, h3 {
 .not_new_line {
     white-space: nowrap;
 }
+
+p {
+    background-color: black;
+}
