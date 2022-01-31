@@ -1,0 +1,28 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+
+
+
+<div class="title">
+    {% if user.is_authenticated %}
+    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+    {% endif %}
+    <h1><a href="/">創価大学内機関マッチング</a></h1>
+    <p>創価大学GCP多様性グループ</p>
+    <p><a href="{% url 'post_list' pk=post.pk %}">質問スタート</a></p>
+</div>
+
+<div class="propose">
+    <h2>
+        <p>プロジェクトの概要</p>
+    </h2>
+    <p>プロジェクトの目的</p>
+    <p>創価大学多様性グループは、「見えないところで困難を抱える人」の困難を取り除くことを目的に活動してきました。本プロジェクトでは、その「見えないところ」で困っている人、つまり学内機関とかかわりがない人を主なターゲットとし、学内機関と生徒との壁を取り除くことを目的としています。</p>
+</div>
+
+{% endblock %}
+
+
+
+
