@@ -13,11 +13,10 @@
 
 <body>
     <div class="page-header">
-        <a href="{% url 'post_new' %}" class="top-menu">
-            <span class="glyphicon glyphicon-plus">
-                <h1><a href="/">創価大学内機関マッチング</a></h1>
-            </span>
-        </a>
+        {% if user.is_authenticated %}
+            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+        {% endif %}
+        <h1><a href="/">創価大学内機関マッチング</a></h1>
         <p>創価大学GCP多様性グループ</p>
         <a>質問スタート</a>
     </div>
