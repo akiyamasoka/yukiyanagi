@@ -8,15 +8,23 @@ def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now(), tag__contains=',1').order_by('published_date')
     return render(request, 'blog/post_list.html', {'posts': posts})
     
+def mid_post_list(request, pk):
+	corrent = get_object_or_404(Post, pk=pk)
+	destinations = corrent.destination
+	posts = Post.objects.filter(published_date__lte=timezone.now(), tag__contains=destinations).order_by('published_date')
+	return render(request, 'blog/mid_post_list.html', {'posts': posts}, {'corrent': corrent})
+	
+def last_post_list(request, pk):
+	corrent = get_object_or_404(Post, pk=pk)
+	destinations = corrent.destination
+	posts = Post.objects.filter(published_date__lte=timezone.now(), tag__contains=destinations).order_by('published_date')
+	return render(request, 'blog/last_post_list.html', {'posts': posts}, {'corrent': corrent})
+	
 def post_detail(request, pk):
 	post = get_object_or_404(Post, pk=pk)
 	return render(request, 'blog/post_detail.html', {'post': post})
 	
-def pre_post_list(request, pk):
-	corrent = get_object_or_404(Post, pk=pk)
-	destinations = corrent.destination
-	posts = Post.objects.filter(published_date__lte=timezone.now(), tag__contains=destinations).order_by('published_date')
-	return render(request, 'blog/pre_post_list.html', {'posts': posts}, {'corrent': corrent})
+	
 	
 def post_new(request):
     if request.method == "POST":
