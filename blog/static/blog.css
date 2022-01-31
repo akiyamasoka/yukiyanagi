@@ -1,0 +1,66 @@
+.content {
+    margin-left: 40px;
+}
+
+h1, h2, h3 {
+    font-family: 'Lobster', cursive;
+}
+
+.date {
+    color: #828282;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.post {
+    margin-bottom: 70px;
+}
+
+.post h2 a, .post h2 a:visited {
+    color: #000000;
+}
+
+
+.page-header, .page-footer {
+    background-color: white;
+    color: black;
+    font-size: 11pt;
+    margin: 5%;
+    padding: 5%;
+    text-align: center;
+    float: right;
+}
+
+.page-header h1 {
+    margin-right: 50%;
+    font-size: 16pt;
+}
+
+.green {
+    background-color: aquamarine;
+    font-size: 24pt;
+    color: black;
+    margin: 0px;
+    text-align: center;
+}
+
+.not_new_line {
+    white-space: nowrap;
+}
+
+p {
+    background-color: black;
+}
