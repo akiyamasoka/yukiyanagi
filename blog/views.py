@@ -10,9 +10,8 @@ def post_list(request):
     
 def mid_post_list(request, pk):
 	corrent = get_object_or_404(Post, pk=pk)
-	destinations = corrent.destination
-	posts = Post.objects.filter(published_date__lte=timezone.now(), tag__contains=destinations).order_by('published_date')
-	return render(request, 'blog/mid_post_list.html', {'posts': posts}, {'corrent': corrent})
+	posts = Post.objects.filter(published_date__lte=timezone.now(), tag__contains=corrent.destination).order_by('published_date')
+	return render(request, 'blog/mid_post_list.html', {'posts': posts})
 	
 def last_post_list(request, pk):
 	corrent = get_object_or_404(Post, pk=pk)
