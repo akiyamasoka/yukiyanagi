@@ -54,6 +54,9 @@ a.btn-radius-solid:hover {
     font-size: 20pt;
     color: black;
     margin: 0px;
+}
+
+.question {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,6 +64,15 @@ a.btn-radius-solid:hover {
 
 .post {
     margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.post_button {
+    width: 30%;
+    height: 30%;
+    background: yellow;
+    border-radius: 50%;
 }
 
 .post h2 a, .post h2 a:visited {
