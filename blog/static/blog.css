@@ -68,9 +68,15 @@ a.btn-radius-solid:hover {
     justify-content: center;
 }
 
+.post p {
+    width: 40%;
+    height: 40%;
+    float: left;
+}
+
 .post_button {
-    width: 30%;
-    height: 30%;
+    width: 100px;
+    height: 100px;
     background: yellow;
     border-radius: 50%;
 }
