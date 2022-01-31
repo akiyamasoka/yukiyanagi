@@ -35,7 +35,6 @@ h1, h2, h3, h4 {
 
 
 .page-header, .page-footer {
-    white-space: nowrap;
     background-color: white;
     color: black;
     font-size: 11pt;
