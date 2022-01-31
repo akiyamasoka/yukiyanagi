@@ -5,11 +5,13 @@
         <div class="question">
             <h1>あなたの悩みを教えてね</h1>
         </div>
-        {% for post in posts %}
-            <div class="post">
-                <p><a href="{% url 'mid_post_list' pk=post.pk %}" class="post_button">{{ post.title }}</a></p>
-            </div>
-        {% endfor %}
+        <div class="posts">
+            {% for post in posts %}
+                <div class="post">
+                    <p><a href="{% url 'mid_post_list' pk=post.pk %}" class="post_button">{{ post.title }}</a></p>
+                </div>
+            {% endfor %}
+        </div>
         <p class="blanck"></p>
     </div>
 {% endblock %}
