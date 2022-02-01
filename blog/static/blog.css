@@ -76,6 +76,7 @@ a.btn-radius-solid:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .post p {
@@ -89,12 +90,6 @@ a.btn-radius-solid:hover {
     text-decoration: none;
 }
 
-.select {
-    padding-bottom: auto;
-    padding-top: auto;
-    float: left;
-}
-
 .post_button {
     width: 100%;
     padding-top: 100%;
@@ -103,6 +98,13 @@ a.btn-radius-solid:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.select {
+    position: absolute;
+    padding-bottom: auto;
+    padding-top: auto;
+    float: left;
 }
 
 .post h2 a, .post h2 a:visited {
