@@ -32,7 +32,7 @@ class Servey(models.Model):
 	needs = models.ManyToManyField(Tag, verbose_name='あなたのニーズに合った学内機関が表示されたと思いますか？')
 	question = models.TextField('2つ目の理由、またはサイトデザインや質問内容等に関する要望があれば教えてください。')
 	link = models.CharField(max_length=200, default="https://www.soka.ac.jp/inquiries/list")
-	tag = models.CharField(max_length=200, default="交通事故報告")
+	institution = models.CharField(max_length=200, default="交通事故報告")
 	published_date = models.DateTimeField(blank=True, null=True)
 	
 	def publish(self):
