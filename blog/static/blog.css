@@ -182,30 +182,38 @@ a.btn-radius-solid:hover {
     padding-right: auto;
     text-align: center;
     clear: both;
-    font-size: 10pt;
+    font-size: 16pt;
     color: white;
     background-color: black;
 }
 
 .main_title {
     margin: 0px;
-    padding-top: 100%;
+    padding-top: 40%;
     padding-bottom: 2%;
 }
 
 .title h1 {
-    font-size: 24pt;
+    font-size: 40pt;
+    padding: 0px;
+    margin: 0px;
 }
 
 .main_title_bottom {
     margin: 0px;
-    padding-top: 20%;
-    padding-bottom: 100%;
+    padding-top: 5%;
+    padding-bottom: 30%;
+}
+
+.main_button {
+    width: 40%;
+    height: 20%;
+    padding-left: auto;
+    padding-right: auto;
+    margin: 0px;
 }
 
 .start_button {
-    width: 20%;
-    height: 7%;
     margin-left: auto;
     margin-right: auto;
     background: yellow;
@@ -216,6 +224,10 @@ a.btn-radius-solid:hover {
 }
 
 .image2 {
+    position: relative;
+}
+
+.image2 img {
     width: 100%;
 }
 
