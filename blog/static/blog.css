@@ -89,9 +89,10 @@ a.btn-radius-solid:hover {
     text-decoration: none;
 }
 
-.post p a {
+.select {
     padding-bottom: auto;
-    padding-top: auto; 
+    padding-top: auto;
+    float: left;
 }
 
 .post_button {
