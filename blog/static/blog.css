@@ -1,7 +1,7 @@
 .page-header, .page-footer {
     background-color: white;
     color: black;
-    font-size: 1pt;
+    font-size: 3pt;
     margin: 1%;
     padding: 1%;
     margin-left: 5%;
@@ -16,7 +16,7 @@
     justify-content: center;
     align-items: center;
     margin-right: 40%;
-    font-size: 3pt;
+    font-size: 6pt;
 }
 
 .page-header p {
@@ -81,8 +81,8 @@ a.btn-radius-solid:hover {
 }
 
 .post p {
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,7 +192,7 @@ a.btn-radius-solid:hover {
     font-size: 16pt;
     color: white;
     background-image: url(image1.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
