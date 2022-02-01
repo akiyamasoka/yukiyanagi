@@ -2,16 +2,49 @@
 
 {% block content %}
     <div class="green">
-        <div class="question">
-            <h1>あなたの悩みを教えてね</h1>
-        </div>
-        <div class="posts">
-            {% for post in posts %}
-                <div class="post">
+        <div class="result">
+            <div class="result_title">
+                <h1>○マッチング結果</h1>
+                <p class="blanck"></p>
+                <p>あなたには...</p>
+            </div>
+            <div class="result_list">
+                {% for post in posts %}
                     <p><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></p>
+                {% endfor %}
+            </div>
+            <div class="result_title">
+                <p>がマッチングしました</p>
+                <div class="illustration">
+                    <p>※学内機関への申込ボタンは、</p>
+                    <p>アンケート終了後に出てきます！</p>
+                </div>
+            </div>
+            {% for post in posts %}
+                <div class="result_detail">
+                    <h1>○【</h1>
+                    <h1>{{ post.title }}</h1>
+                    <h1>】とは？</h1>
+                    <p class="blanck"></p>
+                    <p>{{ post.text|linebreaksbr }}</p>
+                </div>
+                <div class="result_voice">
+                    <h1>○【</h1>
+                    <h1>{{ post.title }}</h1>
+                    <h1>】を利用した人の声</h1>
+                    <p class="blanck"></p>
+                    <p>{{ post.text|linebreaksbr }}
+                </div>
+                <div class="result_button">
+                    <h3>※</h3>
+                    <h3>{{ post.title }}</h3>
+                    <h3>の申込ボタンは、</h3>
+                    <p class="blanck"></p>
+                    <p>アンケート終了後に出てきます！</p>
+                    <p><a href="{% url 'post_detail' pk=post.pk %}" class="re_button">アンケートへ進む</a></p>
                 </div>
             {% endfor %}
         </div>
-        <p class="blanck"></p>
+        
     </div>
 {% endblock %}
