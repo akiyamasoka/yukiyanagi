@@ -123,9 +123,10 @@ a.btn-radius-solid:hover {
     padding-bottom: 10%;
 }
 
-.result_list {
+.result_lists {
     font-size: 16pt;
     color: red;
+    clear: both;
 }
 
 .result_list {
@@ -241,10 +242,50 @@ a.btn-radius-solid:hover {
     padding-top: 2%;
 }
 
-.post-form textarea, .post-form input {
-    width: 100%;
+.servey_form {
+    background-color: white;
 }
 
+.apply {
+    background-color: white;
+    color: black;
+    font-size: 12pt;
+    text-align: center;
+    width: 100%;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.servey_form h1, .apply h1 {
+    font-size: 24pt;
+    text-align: center;
+    width: 100%;
+}
+.post-form textarea, .post-form input {
+    width: 80%;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.submit_button {
+    width: 30%;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.apply_button {
+    width: 40%;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.app_button {
+    font-size: 18pt;
+    background-color: yellow;
+    border-color: black;
+    width: 100%;
+    height: 100%;
+}
 
 .blanck {
     clear: both;
