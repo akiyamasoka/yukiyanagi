@@ -11,6 +11,7 @@ class Post(models.Model):
     text = models.TextField()
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
+    link = models.CharField(max_length=200, default="https://www.soka.ac.jp/inquiries/list")
 
     def publish(self):
         self.published_date = timezone.now()
@@ -18,3 +19,17 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+        
+class Servey(models.Model):
+	student_number = models.IntegerField()
+	needs = models.CharField(max_length=200)
+	question = models.TextField()
+	link = models.CharField(max_length=200, default="https://www.soka.ac.jp/inquiries/list")
+	tag = models.CharField(max_length=200, default="交通事故報告")
+	published_date = models.DateTimeField(blank=True, null=True)
+	
+	def publish(self):
+		self.save()
+		
+	def __str__(self):
+		return self.student_number

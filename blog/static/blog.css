@@ -128,6 +128,11 @@ a.btn-radius-solid:hover {
     color: red;
 }
 
+.result_list {
+    text-decoration: none;
+    color: red;
+}
+
 .result_detail {
     padding-left: 2%;
     padding-right: 2%;
@@ -140,7 +145,7 @@ a.btn-radius-solid:hover {
 
 .re_button {
     width: 40%;
-    height: 15%;
+    height: 30%;
     margin-left: auto;
     margin-right: auto;
     background: yellow;
@@ -156,9 +161,9 @@ a.btn-radius-solid:hover {
 
 .result h3 {
     width: 100%;
-    height: 100%;
+    height: 200px;
     padding-top: 2%;
-    padding-bottom: 20%;
+    padding-bottom: 2%;
 }
 
 
@@ -182,7 +187,8 @@ a.btn-radius-solid:hover {
     clear: both;
     font-size: 16pt;
     color: white;
-    background-image: url(image1.jpg)
+    background-image: url(image1.jpg);
+    background-size: contain;
 }
 
 .main_title {
@@ -206,8 +212,8 @@ a.btn-radius-solid:hover {
 .main_button {
     width: 40%;
     height: 30%;
-    padding-left: auto;
-    padding-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .start_button {
@@ -232,8 +238,13 @@ a.btn-radius-solid:hover {
 }
 
 .purpose {
-    padding-top: 20%;
+    padding-top: 2%;
 }
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
 
 .blanck {
     clear: both;

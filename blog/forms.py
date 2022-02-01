@@ -1,9 +1,16 @@
 from django import forms
 
-from .models import Post
+from .models import Post, Servey
 
 class PostForm(forms.ModelForm):
 
     class Meta:
         model = Post
         fields = ('title', 'tag', 'text')
+        
+class ServeyForm(forms.ModelForm):
+	
+	class Meta:
+		model = Servey
+		fields = ('student_number', 'needs', 'question')
+		

@@ -10,7 +10,7 @@
             </div>
             <div class="result_list">
                 {% for post in posts %}
-                    <p><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></p>
+                    <p><a href="{% url 'post_detail' pk=post.pk %}" class="result_lists">{{ post.title }}</a></p>
                 {% endfor %}
             </div>
             <div class="result_title">
@@ -34,7 +34,7 @@
                 <div class="result_button">
                     <p>※{{ post.title }}の申込ボタンは、</p>
                     <p>アンケート終了後に出てきます！</p>
-                    <h3><a href="{% url 'post_detail' pk=post.pk %}" class="re_button">アンケートへ進む</a></h3>
+                    <h3><a href="{% url 'servey_form' pk=post.pk %}" class="re_button">アンケートへ進む</a></h3>
                 </div>
             {% endfor %}
         </div>

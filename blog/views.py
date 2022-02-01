@@ -1,8 +1,8 @@
 from django.shortcuts import redirect, render, get_object_or_404
 from django.utils import timezone
 from django.db.models import Q
-from .models import Post
-from .forms import PostForm
+from .models import Post, Servey
+from .forms import PostForm, ServeyForm
 
 def main(request):
 	return render(request, 'blog/main.html')
@@ -58,3 +58,24 @@ def post_edit(request, pk):
     else:
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
+    
+    
+    
+def servey_form(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    if request.method == "POST":
+        form = ServeyForm(request.POST)
+        if form.is_valid():
+            servey = form.save(commit=False)
+            servey.link = post.link
+            servey.tag = post.title
+            servey.published_date = timezone.now()
+            post.save()
+            return redirect('post_detail', pk=post.pk)
+    else:
+        form = ServeyForm()
+    return render(request, 'blog/servey_form.html', {'form': form})
+    
+    
+    
+    
