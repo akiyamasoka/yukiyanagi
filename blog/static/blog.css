@@ -184,6 +184,7 @@ a.btn-radius-solid:hover {
     clear: both;
     font-size: 10pt;
     color: white;
+    background-color: black;
 }
 
 .main_title {
