@@ -10,7 +10,7 @@
             </div>
             <div class="result_list">
                 {% for post in posts %}
-                    <p><a href="{% url 'post_detail' pk=post.pk %}" class="result_lists">{{ post.title }}</a></p>
+                    <p><a href="#id_{{ post.title }}" class="result_lists">{{ post.title }}</a></p>
                 {% endfor %}
             </div>
             <div class="result_title">
@@ -21,7 +21,7 @@
                 </div>
             </div>
             {% for post in posts %}
-                <div class="result_detail">
+                <div class="result_detail"><a id="id_{{ post.title }}"></a>
                     <h1>○【{{ post.title }}】とは？</h1>
                     <p class="blanck"></p>
                     <p>{{ post.text|linebreaksbr }}</p>

@@ -124,6 +124,7 @@ a.btn-radius-solid:hover {
 }
 
 .result_lists {
+    text-decoration: none;
     font-size: 16pt;
     color: red;
     clear: both;
@@ -275,13 +276,15 @@ a.btn-radius-solid:hover {
 
 .apply_button {
     width: 40%;
-    padding-left: auto;
-    padding-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .app_button {
+    text-decoration: none;
     font-size: 18pt;
     background-color: yellow;
+    border: 0.1%;
     border-color: black;
     width: 100%;
     height: 100%;
