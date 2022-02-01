@@ -9,11 +9,12 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'tag', 'text')
         
 class ServeyForm(forms.ModelForm):
+	tag = forms.ModelMultipleChoiceField(
+        queryset=Tag.objects,
+        widget=forms.CheckboxSelectMultiple
+    )
 	
 	class Meta:
 		model = Servey
 		fields = ('student_number', 'needs', 'question')
-		widgets = {
-            'tag': forms.CheckboxSelectMultiple
-        }
 		
