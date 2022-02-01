@@ -2,10 +2,16 @@
 
 {% block content %}
     <div class="green">
-        {% for post in posts %}
-            <div class="post">
-                <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
-            </div>
-        {% endfor %}
+        <div class="question">
+            <h1>あなたの悩みを教えてね</h1>
+        </div>
+        <div class="posts">
+            {% for post in posts %}
+                <div class="post">
+                    <p><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></p>
+                </div>
+            {% endfor %}
+        </div>
+        <p class="blanck"></p>
     </div>
 {% endblock %}
