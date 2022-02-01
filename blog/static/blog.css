@@ -44,6 +44,7 @@ a.btn-radius-solid {
 }
 
 a.btn-radius-solid:hover {
+    text-decoration: none;
     background: -webkit-gradient(linear, left bottom, left top, from(#fdfbfb), to(#ebedee));
     background: -webkit-linear-gradient(bottom, #fdfbfb 0%, #ebedee 100%);
     background: linear-gradient(to top, #fdfbfb 0%, #ebedee 100%);
@@ -182,6 +183,7 @@ a.btn-radius-solid:hover {
 .main {
     margin: 0px;
     padding: 0px;
+    background-color: gainsboro;
 }
 
 .title {
@@ -233,13 +235,11 @@ a.btn-radius-solid:hover {
 
 .purpose {
     padding-top: 2%;
-    background-color: gainsboro;
 }
 
 .image2 {
     width: 50%;    
     padding-top: 2%;
-    float: left;
 }
 
 .image2 img {
@@ -247,6 +247,8 @@ a.btn-radius-solid:hover {
 }
 
 .purpose_document {
+    padding-left: 60%;
+    padding-right: 10%;
     text-align: left;
     font-size: 4pt;
 }
@@ -279,6 +281,7 @@ a.btn-radius-solid:hover {
     text-align: center;
     width: 100%;
 }
+
 .post-form textarea, .post-form input {
     width: 80%;
     padding-left: auto;
@@ -289,6 +292,10 @@ a.btn-radius-solid:hover {
     width: 30%;
     padding-left: auto;
     padding-right: auto;
+}
+
+.form-control input {
+    width: 50%;
 }
 
 .apply_button {
