@@ -9,7 +9,7 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'tag', 'text')
         
 class ServeyForm(forms.ModelForm):
-	tag = forms.ModelMultipleChoiceField(
+	needs = forms.ModelMultipleChoiceField(
         queryset=Tag.objects,
         widget=forms.CheckboxSelectMultiple
     )
