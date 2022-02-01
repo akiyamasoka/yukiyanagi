@@ -191,6 +191,7 @@ a.btn-radius-solid:hover {
     color: white;
     background-image: url(image1.jpg);
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .main_title {
@@ -230,17 +231,33 @@ a.btn-radius-solid:hover {
     text-decoration: none;
 }
 
-.image2 {
-    position: relative;
+.purpose {
     padding-top: 2%;
+    background-color: gainsboro;
+}
+
+.image2 {
+    width: 50%;    
+    padding-top: 2%;
+    float: left;
 }
 
 .image2 img {
     width: 100%;
 }
 
-.purpose {
-    padding-top: 2%;
+.purpose_document {
+    text-align: left;
+    font-size: 4pt;
+}
+
+.purpose_document h1 {
+    font-size: 14pt;
+}
+
+.purpose_document h2 {
+    font-size: 4pt;
+    margin: 3%;
 }
 
 .servey_form {
