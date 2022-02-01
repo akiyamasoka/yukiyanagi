@@ -66,6 +66,7 @@ a.btn-radius-solid:hover {
 .posts {
     margin-left: auto;
     margin-right: auto;
+    clear: both;
 }
 
 .post {
@@ -86,6 +87,11 @@ a.btn-radius-solid:hover {
     color: black;
     font-size: 20pt;
     text-decoration: none;
+}
+
+.post p a {
+    padding-bottom: auto;
+    padding-top: auto; 
 }
 
 .post_button {
