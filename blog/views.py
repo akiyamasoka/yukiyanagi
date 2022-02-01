@@ -4,6 +4,9 @@ from django.db.models import Q
 from .models import Post
 from .forms import PostForm
 
+def main(request):
+	return render(request, 'blog/main.html')
+
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now(), tag__contains=',1').order_by('published_date')
     return render(request, 'blog/post_list.html', {'posts': posts})

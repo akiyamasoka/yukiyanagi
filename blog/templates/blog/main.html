@@ -1,25 +1,32 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
+    <div class="main">
+        <div class="title">
+            <div class="main_title">
+                <h1>創価大学内</h1>
+                <h1>機関</h1>
+                <h1>マッチング</h1>
+            </div>
+            <p>創価大学GCP多様性グループ</p>
+            <div class="main_title_bottom">
+                <p><a href="{% url 'post_list' pk=post.pk %}" class="start_button">質問スタート</a></p>
+            </div>
+        </div>
 
+        <p class="blanck"></p>
 
-
-<div class="title">
-    {% if user.is_authenticated %}
-    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-    {% endif %}
-    <h1><a href="/">創価大学内機関マッチング</a></h1>
-    <p>創価大学GCP多様性グループ</p>
-    <p><a href="{% url 'post_list' pk=post.pk %}">質問スタート</a></p>
-</div>
-
-<div class="propose">
-    <h2>
-        <p>プロジェクトの概要</p>
-    </h2>
-    <p>プロジェクトの目的</p>
-    <p>創価大学多様性グループは、「見えないところで困難を抱える人」の困難を取り除くことを目的に活動してきました。本プロジェクトでは、その「見えないところ」で困っている人、つまり学内機関とかかわりがない人を主なターゲットとし、学内機関と生徒との壁を取り除くことを目的としています。</p>
-</div>
+        <div class="purpose">
+            <div class="image2">
+                <img src="{% static 'image2.jpg' %}" />
+            </div>
+            <div class="purpose_document">
+                <h1>プロジェクトの概要</h1>
+                <h2>プロジェクトの目的</h2>
+                <p>創価大学多様性グループは、「見えないところで困難を抱える人」の困難を取り除くことを目的に活動してきました。本プロジェクトでは、その「見えないところ」で困っている人、つまり学内機関とかかわりがない人を主なターゲットとし、学内機関と生徒との壁を取り除くことを目的としています。</p>
+            </div>
+        </div>
+    </div>
 
 {% endblock %}
 

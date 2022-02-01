@@ -129,7 +129,8 @@ a.btn-radius-solid:hover {
 }
 
 .result_detail {
-    padding-left: 0%;
+    padding-left: 2%;
+    padding-right: 2%;
     text-align: left;
 }
 
@@ -171,6 +172,56 @@ a.btn-radius-solid:hover {
     float: left;
 }
 
+.main {
+    margin: 0px;
+    padding: 0px;
+}
+
+.title {
+    padding-left: auto;
+    padding-right: auto;
+    text-align: center;
+    clear: both;
+    font-size: 10pt;
+    color: white;
+}
+
+.main_title {
+    margin: 0px;
+    padding-top: 100%;
+    padding-bottom: 2%;
+}
+
+.title h1 {
+    font-size: 24pt;
+}
+
+.main_title_bottom {
+    margin: 0px;
+    padding-top: 20%;
+    padding-bottom: 100%;
+}
+
+.start_button {
+    width: 20%;
+    height: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    background: yellow;
+    border-color: black;
+    color: black;
+    font-size: 10pt;
+    text-decoration: none;
+}
+
+.image2 {
+    width: 100%;
+}
+
+.purpose_document {
+    padding-left: 10%;
+    padding-right: 10%;
+}
 
 .blanck {
     clear: both;
