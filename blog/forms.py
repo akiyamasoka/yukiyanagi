@@ -1,6 +1,6 @@
 from django import forms
 
-from .models import Post, Servey
+from .models import Post, Servey, Tag
 
 class PostForm(forms.ModelForm):
 
