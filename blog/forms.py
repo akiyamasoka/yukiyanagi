@@ -13,4 +13,7 @@ class ServeyForm(forms.ModelForm):
 	class Meta:
 		model = Servey
 		fields = ('student_number', 'needs', 'question')
+		widgets = {
+            'tag': forms.CheckboxSelectMultiple(attrs={'class': 'form-control'})
+        }
 		
