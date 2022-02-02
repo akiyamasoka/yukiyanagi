@@ -68,7 +68,7 @@ def servey_form(request, pk):
         if form.is_valid():
             servey = form.save(commit=False)
             servey.link = post.link
-            servey.tag = post.title
+            servey.institution = post.title
             servey.published_date = timezone.now()
             servey.save()
             return redirect('post_detail', pk=post.pk)
