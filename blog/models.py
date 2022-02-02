@@ -28,9 +28,9 @@ class Tag(models.Model):
         
         
 class Servey(models.Model):
-	student_number = models.IntegerField('学籍番号')
-	needs = models.ManyToManyField(Tag, verbose_name='あなたのニーズに合った学内機関が表示されたと思いますか？')
-	question = models.TextField('2つ目の理由、またはサイトデザインや質問内容等に関する要望があれば教えてください。')
+	student_number = models.IntegerField('① 学籍番号')
+	needs = models.ManyToManyField(Tag, verbose_name='② あなたのニーズに合った学内機関が表示されたと思いますか？')
+	question = models.TextField('③ ②の理由、またはサイトデザインや質問内容等に関する要望があれば教えてください。')
 	link = models.CharField(max_length=200, default="https://www.soka.ac.jp/inquiries/list")
 	institution = models.CharField(max_length=200, default="交通事故報告")
 	published_date = models.DateTimeField(blank=True, null=True)
@@ -39,7 +39,7 @@ class Servey(models.Model):
 		self.save()
 		
 	def __str__(self):
-		return self.student_number
+		return self.institution
 
 
 
