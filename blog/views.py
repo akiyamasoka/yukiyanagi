@@ -70,7 +70,7 @@ def servey_form(request, pk):
             servey.link = post.link
             servey.tag = post.title
             servey.published_date = timezone.now()
-            post.save()
+            servey.save()
             return redirect('post_detail', pk=post.pk)
     else:
         form = ServeyForm()
