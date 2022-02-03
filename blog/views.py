@@ -71,7 +71,7 @@ def servey_form(request, pk):
             servey.institution = post.title
             servey.published_date = timezone.now()
             servey.save()
-            servey.save_m2m()
+            form.save_m2m()
             return redirect('post_detail', pk=post.pk)
     else:
         form = ServeyForm()
