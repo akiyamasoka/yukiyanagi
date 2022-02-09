@@ -17,7 +17,7 @@ class Post(models.Model):
     voice_third = models.TextField(default="準備中です")
     place = models.TextField(max_length=200, default="準備中です")
     screenshot = models.BooleanField(verbose_name='スクリーンショットを表示するか', default=False)
-    map = models.ImageField(upload_to='img/upload', blank=True)
+    maps = models.ImageField(upload_to='img/upload', blank=True)
 
     def publish(self):
         self.published_date = timezone.now()
