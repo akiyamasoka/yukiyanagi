@@ -16,6 +16,8 @@ class Post(models.Model):
     voice_second = models.TextField(default="準備中です")
     voice_third = models.TextField(default="準備中です")
     place = models.TextField(max_length=200, default="準備中です")
+    screenshot = models.BooleanField(verbose_name='スクリーンショットを表示するか', default=False)
+    map = models.ImageField(upload_to='img/upload', blank=True)
 
     def publish(self):
         self.published_date = timezone.now()
@@ -24,6 +26,8 @@ class Post(models.Model):
     def __str__(self):
         return self.title
         
+        
+
 class Tag(models.Model):
 	name = models.CharField('選択肢名', max_length=255)
 	
