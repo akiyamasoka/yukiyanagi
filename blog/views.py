@@ -77,6 +77,10 @@ def servey_form(request, pk):
         form = ServeyForm()
     return render(request, 'blog/servey_form.html', {'form': form})
     
+def post_place(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    return render(request, 'blog/post_place.html', {'post': post})
+    
     
     
     

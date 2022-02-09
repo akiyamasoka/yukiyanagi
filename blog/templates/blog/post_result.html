@@ -29,7 +29,9 @@
                 <div class="result_voice">
                     <h1>○【{{ post.title }}】を利用した人の声</h1>
                     <p class="blanck"></p>
-                    <p>{{ post.text|linebreaksbr }}</p>
+                    <p>{{ post.voice_first|linebreaksbr }}</p>
+                    <p>{{ post.voice_second|linebreaksbr }}</p>
+                    <p>{{ post.voice_third|linebreaksbr }}</p>
                 </div>
                 <div class="result_button">
                     <p>※{{ post.title }}の申込ボタンは、</p>

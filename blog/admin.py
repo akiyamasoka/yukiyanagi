@@ -9,7 +9,10 @@ class ServeyAdmin(admin.ModelAdmin):
 	
 	def _needs(self, row):
 		return ','.join([x.name for x in row.needs.all()])
+    
+class PostAdmin(admin.ModelAdmin):
+    list_display = ('title', 'tag', 'text', 'voice_first', 'voice_second', 'voice_third', 'place')
 
-admin.site.register(Post)
+admin.site.register(Post, PostAdmin)
 admin.site.register(Servey, ServeyAdmin)
 admin.site.register(Tag)

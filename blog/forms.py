@@ -6,7 +6,7 @@ class PostForm(forms.ModelForm):
 
     class Meta:
         model = Post
-        fields = ('title', 'tag', 'text')
+        fields = ('title', 'tag', 'text', 'voice_first', 'voice_second', 'voice_third', 'place')
         
 class ServeyForm(forms.ModelForm):
 	

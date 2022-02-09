@@ -12,6 +12,10 @@ class Post(models.Model):
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
     link = models.CharField(max_length=200, default="https://www.soka.ac.jp/inquiries/list")
+    voice_first = models.TextField(default="準備中です")
+    voice_second = models.TextField(default="準備中です")
+    voice_third = models.TextField(default="準備中です")
+    place = models.TextField(max_length=200, default="準備中です")
 
     def publish(self):
         self.published_date = timezone.now()

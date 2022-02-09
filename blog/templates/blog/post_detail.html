@@ -6,7 +6,7 @@
         <p>回答が送信されました</p>
         <p>ご協力ありがとうございました</p>
         <div class="apply_button">
-            <p><a href="{{ post.link }}" class="app_button">申込ボタン</a></p>
+            <p><a href="{% url 'post_place' pk=post.pk %}" class="app_button">申込ボタン</a></p>
         </div>
         <p>※創価大学HPお問い合わせページに飛びます。</p>
         <p>お問い合わせ内容には「雪柳Webページから来ました。」とお書きください</p>
