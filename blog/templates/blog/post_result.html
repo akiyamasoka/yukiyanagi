@@ -26,19 +26,21 @@
                     <p class="blanck"></p>
                     <p>{{ post.text|linebreaksbr }}</p>
                 </div>
-                <div class="result_voice">
-                    <h1>○【{{ post.title }}】を利用した人の声</h1>
-                    <p class="blanck"></p>
-                    <div class="balloon">
-                        <p>{{ post.voice_first|linebreaksbr }}</p>
-                        {% if post.voice_second != "準備中です" %}
-                            <p>{{ post.voice_second|linebreaksbr }}</p>
-                        {% endif %}
-                        {% if post.voice_third != "準備中です" %}
-                            <p>{{ post.voice_third|linebreaksbr }}</p>
-                        {% endif %}
+                {% post.voice_first != "準備中です" %}
+                    <div class="result_voice">
+                        <h1>○【{{ post.title }}】を利用した人の声</h1>
+                        <p class="blanck"></p>
+                        <div class="balloon">
+                            <p>{{ post.voice_first|linebreaksbr }}</p>
+                            {% if post.voice_second != "準備中です" %}
+                                <p>{{ post.voice_second|linebreaksbr }}</p>
+                            {% endif %}
+                            {% if post.voice_third != "準備中です" %}
+                                <p>{{ post.voice_third|linebreaksbr }}</p>
+                            {% endif %}
+                        </div>
                     </div>
-                </div>
+                {% endif %}
                 <div class="result_button">
                     <p>※{{ post.title }}の申込ボタンは、</p>
                     <p>アンケート終了後に出てきます！</p>
