@@ -7,6 +7,9 @@ class PostForm(forms.ModelForm):
     class Meta:
         model = Post
         fields = ('title', 'tag', 'text', 'voice_first', 'voice_second', 'voice_third', 'place', 'screenshot', 'maps')
+        widgets = {
+            'maps': forms.CheckboxSelectMultiple(attrs={'class': 'form-control'})
+        }
         
 class ServeyForm(forms.ModelForm):
 	

@@ -13,9 +13,11 @@
         </div>
         <div class="result_title">
             <p>にあります</p>
+            {% if post.maps != "学生課" %}
             <div class="illustration">
                 <p>※未実装※</p>
             </div>
+            {% endif %}
         </div>
         {% if post.screenshot == True %}
             <div class="result_detail">

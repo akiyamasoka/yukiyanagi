@@ -3,6 +3,12 @@ from django.db import models
 from django.utils import timezone
 
 
+class Maps(models.Model):
+    name = models.CharField('場所の選択肢名', max_length=255)
+
+    def __str__(self):
+        return self.name
+
 class Post(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
@@ -17,7 +23,7 @@ class Post(models.Model):
     voice_third = models.TextField(default="準備中です")
     place = models.TextField(max_length=200, default="準備中です")
     screenshot = models.BooleanField(verbose_name='スクリーンショットを表示するか', default=False)
-    maps = models.ImageField(upload_to='img/upload', blank=True)
+    maps = models.ManyToManyField(Maps, verbose_name='場所')
 
     def publish(self):
         self.published_date = timezone.now()
