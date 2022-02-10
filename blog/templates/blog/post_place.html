@@ -9,9 +9,7 @@
             <p>あなたにマッチした学内機関は</p>
         </div>
         <div class="result_list">
-            {% for post in posts %}
-            <p>{{ post.title }}</p>
-            {% endfor %}
+            <p>{{ post.place }}</p>
         </div>
         <div class="result_title">
             <p>にあります</p>
@@ -19,16 +17,18 @@
                 <p>※未実装</p>
             </div>
         </div>
-        <div class="result_detail">
-            <h1>○【{{ post.title }}】の予約方法</h1>
-            <p class="blanck"></p>
-            <p>①創価大学ポータルサイトにあなたのアカウントで入ってね</p>
-            <p>②「オンラインサービス特集」をクリック！</p>
-            <p>③あなたにマッチした学内機関をスクロールして見つける</p>
-        </div>
-        <div class="result_button">
-            <h3><a href="https://plas.soka.ac.jp/csp/plas/login.csp" class="re_button">学内機関を利用する</a></h3>
-        </div>
+        {% if post.screenshot == true %}
+            <div class="result_detail">
+                <h1>○【{{ post.title }}】の予約方法</h1>
+                <p class="blanck"></p>
+                <p>①創価大学ポータルサイトにあなたのアカウントで入ってね</p>
+                <p>②「オンラインサービス特集」をクリック！</p>
+                <p>③あなたにマッチした学内機関をスクロールして見つける</p>
+            </div>
+            <div class="result_button">
+                <h3><a href="https://plas.soka.ac.jp/csp/plas/login.csp" class="re_button">学内機関を利用する</a></h3>
+            </div>
+        {% endif %}
     </div>
 
 </div>
