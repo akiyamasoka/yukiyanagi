@@ -11,7 +11,11 @@ class ServeyAdmin(admin.ModelAdmin):
 		return ','.join([x.name for x in row.needs.all()])
     
 class PostAdmin(admin.ModelAdmin):
-    list_display = ('title', 'tag', 'text', 'voice_first', 'voice_second', 'voice_third', 'place', 'screenshot')
+    list_display = ('title', 'tag', 'text', 'voice_first', 'voice_second', 'voice_third', 'place', 'screenshot', '_maps')
+    
+    def _maps(self, row):
+        return ','.join([x.name for x in row.needs.all()])
+    
 
 admin.site.register(Post, PostAdmin)
 admin.site.register(Servey, ServeyAdmin)

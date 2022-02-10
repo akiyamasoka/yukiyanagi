@@ -26,7 +26,7 @@
                     <p class="blanck"></p>
                     <p>{{ post.text|linebreaksbr }}</p>
                 </div>
-                {% post.voice_first != "準備中です" %}
+                {% if post.voice_first != "準備中です" %}
                     <div class="result_voice">
                         <h1>○【{{ post.title }}】を利用した人の声</h1>
                         <p class="blanck"></p>
