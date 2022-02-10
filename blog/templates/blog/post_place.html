@@ -1,4 +1,5 @@
 {% extends 'blog/base.html' %}
+{% load static %}
 
 {% block content %}
 <div class="green">
@@ -13,10 +14,50 @@
         </div>
         <div class="result_title">
             <p>にあります</p>
-            {% if post.maps != "学生課" %}
-            <div class="illustration">
-                <p>※未実装※</p>
-            </div>
+            {% if post.maps == "学生課" %}
+                <div class="illustration">
+                    <img src="{% static '学生課.jpg' %}" />
+                </div>
+            {% endif %}
+            {% if post.maps == "SPACe" %}
+                <div class="illustration">
+                    <img src="{% static 'SPACe.jpg' %}" />
+                </div>
+            {% endif %}
+            {% if post.maps == "キャリアセンター" %}
+                <div class="illustration">
+                    <img src="{% static 'キャリアセンター.jpg' %}" />
+                </div>
+            {% endif %}
+            {% if post.maps == "キャリアデザインステーション" %}
+                <div class="illustration">
+                    <img src="{% static 'キャリアデザインステーション.jpg' %}" />
+                </div>
+            {% endif %}
+            {% if post.maps == "学生相談室" %}
+                <div class="illustration">
+                    <img src="{% static '学生相談室.jpg' %}" />
+                </div>
+            {% endif %}
+            {% if post.maps == "教務課" %}
+                <div class="illustration">
+                    <img src="{% static '教務課.jpg' %}" />
+                </div>
+            {% endif %}
+            {% if post.maps == "国際課" %}
+                <div class="illustration">
+                    <img src="{% static '国際課.jpg' %}" />
+                </div>
+            {% endif %}
+            {% if post.maps == "障害学生支援室" %}
+                <div class="illustration">
+                    <img src="{% static '障害学生支援室.jpg' %}" />
+                </div>
+            {% endif %}
+            {% if post.maps == "保健センター" %}
+                <div class="illustration">
+                    <img src="{% static '保健センター.jpg' %}" />
+                </div>
             {% endif %}
         </div>
         {% if post.screenshot == True %}
@@ -28,7 +69,7 @@
                 <p>③あなたにマッチした学内機関をスクロールして見つける</p>
             </div>
             <div class="result_button">
-                <h3><a href="https://plas.soka.ac.jp/csp/plas/login.csp" class="re_button">学内機関を利用する</a></h3>
+                <h3><a href="{{ post.link }}" class="re_button">学内機関を利用する</a></h3>
             </div>
         {% endif %}
     </div>
