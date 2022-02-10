@@ -31,12 +31,33 @@
                         <h1>○【{{ post.title }}】を利用した人の声</h1>
                         <p class="blanck"></p>
                         <div class="balloon">
-                            <p>{{ post.voice_first|linebreaksbr }}</p>
+                            <div class="faceicon">
+                                <img src="{% static 'chara1.jpg' %}" />
+                            </div>
+                            <div class="chatting">
+                                <div class="says">
+                                    <p>{{ post.voice_first|linebreaksbr }}</p>
+                                </div>
+                            </div>
                             {% if post.voice_second != "準備中です" %}
-                                <p>{{ post.voice_second|linebreaksbr }}</p>
+                                <div class="faceicon">
+                                    <img src="{% static 'chara2.jpg' %}" />
+                                </div>
+                                <div class="chatting">
+                                    <div class="says">
+                                        <p>{{ post.voice_second|linebreaksbr }}</p>
+                                    </div>
+                                </div>
                             {% endif %}
                             {% if post.voice_third != "準備中です" %}
-                                <p>{{ post.voice_third|linebreaksbr }}</p>
+                                <div class="faceicon">
+                                    <img src="{% static 'chara3.jpg' %}" />
+                                </div>
+                                <div class="chatting">
+                                    <div class="says">
+                                        <p>{{ post.voice_third|linebreaksbr }}</p>
+                                    </div>
+                                </div>
                             {% endif %}
                         </div>
                     </div>
