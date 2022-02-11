@@ -330,7 +330,7 @@ a.btn-radius-solid:hover {
     color: red;
 }
 
-.result_lists, result_list p {
+.result_lists, .result_list p {
     text-decoration: none;
     font-size: 16pt;
     color: red;
@@ -340,7 +340,7 @@ a.btn-radius-solid:hover {
 .result_detail p {
     padding-left: 10%;
     padding-right: 10%;
-    margin-top: 5%;
+    margin-top: 2%;
     text-align: left;
 }
 
@@ -348,14 +348,22 @@ a.btn-radius-solid:hover {
     width: 100%;
 }
 
+.illustration img, .screenshot_image img {
+    width: 100%;
+}
+
 .result_voice {
-    margin: 2%;
 }
 
 .balloon {
-    width: 100%;
-    margin: 1.5em 0;
+    width: 90%;
+    margin: 5%;
     overflow: hidden;
+}
+
+.voice {
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 .balloon .faceicon {
