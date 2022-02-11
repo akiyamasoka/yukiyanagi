@@ -1,7 +1,8 @@
+/* base.html */
 .page-header, .page-footer {
     background-color: white;
     color: black;
-    font-size: 3pt;
+    font-size: 5pt;
     margin: 1%;
     padding: 1%;
     margin-left: 5%;
@@ -16,7 +17,7 @@
     justify-content: center;
     align-items: center;
     margin-right: 40%;
-    font-size: 6pt;
+    font-size: 8pt;
 }
 
 .page-header p {
@@ -25,6 +26,11 @@
     justify-content: center;
     align-items: center;
     margin: 0.75%;
+}
+
+.page-footer {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .btn,
@@ -50,136 +56,14 @@ a.btn-radius-solid:hover {
     background: linear-gradient(to top, #fdfbfb 0%, #ebedee 100%);
 }
 
-.green {
-    background: linear-gradient(#CBFFD3,#007700);
-    font-size: 20pt;
-    color: black;
-    margin: 0px;
-}
-
-.question {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    clear: both;
-}
-
-.posts {
-    margin-left: auto;
-    margin-right: auto;
-    clear: both;
-}
-
-.post {
-    width: 50%;
-    height: 50%;
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.post p {
-    width: 80%;
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.post_button {
-    width: 100%;
-    height: 350px;
-    background: yellow;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    font-size: 20pt;
-    text-decoration: none;
-}
-
-.post h2 a, .post h2 a:visited {
-    color: #000000;
-}
-
-.result {
-    padding-left: auto;
-    padding-right: auto;
-    text-align: center;
-    font-size: 10pt;
-    color: black;
-    margin: 0px;
-    clear: both;
-}
-
-.result p {
-    margin: 0px;
-}
-
-.illustration {
-    padding-top: 5%;
-    padding-bottom: 10%;
-}
-
-.result_lists {
-    text-decoration: none;
-    font-size: 16pt;
-    color: red;
-    clear: both;
-}
-
-.result_list {
-    text-decoration: none;
-    color: red;
-}
-
-.result_detail {
-    padding-left: 2%;
-    padding-right: 2%;
-    text-align: left;
-}
-
-.result_voice {
-    margin: 2%;
-}
-
-.re_button {
-    width: 40%;
-    height: 30%;
-    margin-left: auto;
-    margin-right: auto;
-    background: yellow;
-    border-color: black;
-    border-radius: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    font-size: 10pt;
-    text-decoration: none;
-}
-
-.result h3 {
-    width: 100%;
-    height: 200px;
-    padding-top: 2%;
-    padding-bottom: 2%;
-}
 
 
-.result h1 {
-    font-size: 16pt;
-    width: 70%;
-    padding-left: 0px;
-    text-align: left;
-    margin: 2%;
-    color: black;
-    float: left;
-}
 
+
+
+
+
+/* main.html */
 .main {
     margin: 0px;
     padding: 0px;
@@ -251,17 +135,94 @@ a.btn-radius-solid:hover {
     padding-left: 60%;
     padding-right: 10%;
     text-align: left;
-    font-size: 4pt;
+    font-size: 5pt;
 }
 
 .purpose_document h1 {
-    font-size: 14pt;
+    font-size: 16pt;
 }
 
 .purpose_document h2 {
-    font-size: 4pt;
+    font-size: 6pt;
     margin: 3%;
 }
+
+
+
+
+
+
+
+
+
+/* post.html */
+/* post_list,mid_post_list,last_post_list */
+
+.green {
+    background: linear-gradient(#CBFFD3,#007700);
+    font-size: 20pt;
+    color: black;
+    margin: 0px;
+}
+
+.question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clear: both;
+}
+
+.posts {
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+}
+
+.post {
+    width: 50%;
+    height: 50%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.post p {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post_button {
+    width: 100%;
+    height: 350px;
+    background: yellow;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 20pt;
+    text-decoration: none;
+}
+
+.post h2 a, .post h2 a:visited {
+    color: #000000;
+}
+
+
+
+
+
+
+
+
+/* post_edit */
+/* servey_form */
+/* post_detail */
 
 .servey_form {
     background-color: white;
@@ -294,7 +255,7 @@ a.btn-radius-solid:hover {
 }
 
 .submit_button {
-    width: 30%;
+    width: 60%;
     padding-left: auto;
     padding-right: auto;
 }
@@ -319,17 +280,77 @@ a.btn-radius-solid:hover {
     height: 100%;
 }
 
-.blanck {
+
+
+
+
+
+
+
+/* post_result */
+/* post_place */
+
+.result {
+    padding-left: auto;
+    padding-right: auto;
+    text-align: center;
+    font-size: 10pt;
+    color: black;
+    margin: 0px;
     clear: both;
-    padding: 0px;
+}
+
+.result p {
     margin: 0px;
 }
 
-.not_new_line {
-    white-space: nowrap;
-    text-align: center;
+.result h1 {
+    font-size: 16pt;
+    width: 70%;
+    padding-left: 5%;
+    text-align: left;
+    margin: 2%;
+    color: black;
+    float: left;
 }
 
+.make_blank {
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+.illustration {
+    padding-top: 5%;
+    padding-bottom: 10%;
+    width: 100%;
+}
+
+.result_list {
+    text-decoration: none;
+    color: red;
+}
+
+.result_lists, result_list p {
+    text-decoration: none;
+    font-size: 16pt;
+    color: red;
+    clear: both;
+}
+
+.result_detail p {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 5%;
+    text-align: left;
+}
+
+.screenshot_image {
+    width: 100%;
+}
+
+.result_voice {
+    margin: 2%;
+}
 
 .balloon {
     width: 100%;
@@ -352,6 +373,7 @@ a.btn-radius-solid:hover {
 
 .balloon .chatting {
     width: 100%;
+    text-align: left;
 }
 
 .says {
@@ -377,3 +399,46 @@ a.btn-radius-solid:hover {
     margin: 0;
     padding: 0;
 }
+
+.result h3 {
+    width: 100%;
+    height: 200px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.re_button {
+    width: 40%;
+    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    background: yellow;
+    border-color: black;
+    border-radius: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 10pt;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* aditional */
+
+.blanck {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+.not_new_line {
+    white-space: nowrap;
+    text-align: center;
+}
+
+

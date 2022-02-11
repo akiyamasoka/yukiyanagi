@@ -16,7 +16,7 @@
             </div>
             <div class="result_title">
                 <p>がマッチングしました</p>
-                <div class="illustration">
+                <div class="make_blank">
                     <p>※学内機関への申込ボタンは、</p>
                     <p>アンケート終了後に出てきます！</p>
                 </div>
@@ -32,31 +32,37 @@
                         <h1>○【{{ post.title }}】を利用した人の声</h1>
                         <p class="blanck"></p>
                         <div class="balloon">
-                            <div class="faceicon">
-                                <img src="{% static 'chara1.jpg' %}" />
-                            </div>
-                            <div class="chatting">
-                                <div class="says">
-                                    <p>{{ post.voice_first|linebreaksbr }}</p>
-                                </div>
-                            </div>
-                            {% if post.voice_second != "準備中です" %}
+                            <div class="voice">
                                 <div class="faceicon">
-                                    <img src="{% static 'chara2.jpg' %}" />
+                                    <img src="{% static 'chara1.jpg' %}" />
                                 </div>
                                 <div class="chatting">
                                     <div class="says">
-                                        <p>{{ post.voice_second|linebreaksbr }}</p>
+                                        <p>{{ post.voice_first|linebreaksbr }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            {% if post.voice_second != "準備中です" %}
+                                <div class="voice">
+                                    <div class="faceicon">
+                                        <img src="{% static 'chara2.jpg' %}" />
+                                    </div>
+                                    <div class="chatting">
+                                        <div class="says">
+                                            <p>{{ post.voice_second|linebreaksbr }}</p>
+                                        </div>
                                     </div>
                                 </div>
                             {% endif %}
                             {% if post.voice_third != "準備中です" %}
-                                <div class="faceicon">
-                                    <img src="{% static 'chara3.jpg' %}" />
-                                </div>
-                                <div class="chatting">
-                                    <div class="says">
-                                        <p>{{ post.voice_third|linebreaksbr }}</p>
+                                <div class="voice">
+                                    <div class="faceicon">
+                                        <img src="{% static 'chara3.jpg' %}" />
+                                    </div>
+                                    <div class="chatting">
+                                        <div class="says">
+                                            <p>{{ post.voice_third|linebreaksbr }}</p>
+                                        </div>
                                     </div>
                                 </div>
                             {% endif %}
