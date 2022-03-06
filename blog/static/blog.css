@@ -160,7 +160,8 @@ a.btn-radius-solid:hover {
 /* post_list,mid_post_list,last_post_list */
 
 .green {
-    background: linear-gradient(#CBFFD3,#007700);
+    /*background: linear-gradient(#CBFFD3,#007700);*/
+    background-color: greenyellow;
     font-size: 20pt;
     color: black;
     margin: 0px;
