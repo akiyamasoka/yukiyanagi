@@ -91,10 +91,10 @@ def servey_form_ex(request):
             servey.published_date = timezone.now()
             servey.save()
             form.save_m2m()
-            return redirect('main', pk=post.pk)
+            return redirect('main')
         else:
             form = ServeyForm()
-        return render(request, 'blog/servey_form.html', {'form': form})
+        return render(request, 'blog/servey_form_ex.html', {'form': form})
     
     
     
