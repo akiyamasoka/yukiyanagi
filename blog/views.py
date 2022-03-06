@@ -81,8 +81,9 @@ def post_place(request, pk):
     post = get_object_or_404(Post, pk=pk)
     return render(request, 'blog/post_place.html', {'post': post})
     
+
+    
 def servey_form_ex(request):
-    post = get_object_or_404(Post)
     if request.method == "POST":
         form = ServeyForm(request.POST)
         if form.is_valid():
