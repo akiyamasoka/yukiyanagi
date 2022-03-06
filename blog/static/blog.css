@@ -206,7 +206,7 @@ a.btn-radius-solid:hover {
     justify-content: center;
     align-items: center;
     color: black;
-    font-size: 60pt;
+    font-size: 40pt;
     text-decoration: none;
 }
 
@@ -245,7 +245,7 @@ a.btn-radius-solid:hover {
     width: 100%;
 }
 
-.servey_form p {
+.servey_form_txt p {
     font-size: 16pt;
     text-align: center;
     width: 100%;
