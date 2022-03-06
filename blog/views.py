@@ -82,6 +82,7 @@ def post_place(request, pk):
     return render(request, 'blog/post_place.html', {'post': post})
     
 def servey_form_ex(request):
+    post = get_object_or_404(Post)
     if request.method == "POST":
         form = ServeyForm(request.POST)
         if form.is_valid():
@@ -92,9 +93,9 @@ def servey_form_ex(request):
             servey.save()
             form.save_m2m()
             return redirect('main')
-        else:
-            form = ServeyForm()
-        return render(request, 'blog/servey_form_ex.html', {'form': form})
+    else:
+        form = ServeyForm()
+    return render(request, 'blog/servey_form_ex.html', {'form': form})
     
     
     
