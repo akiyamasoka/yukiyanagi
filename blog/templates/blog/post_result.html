@@ -17,6 +17,7 @@
             <div class="result_title">
                 <p>がマッチングしました</p>
                 <div class="make_blank">
+                    <p>※赤字をクリックするとそのサービスの説明を見ることができるよ！</p>
                     <p>※学内機関への申込ボタンは、</p>
                     <p>アンケート終了後に出てきます！</p>
                 </div>
@@ -72,7 +73,7 @@
                 <div class="result_button">
                     <p>※{{ post.title }}の申込ボタンは、</p>
                     <p>アンケート終了後に出てきます！</p>
-                    <h3><a href="{% url 'servey_form' pk=post.pk %}" class="re_button">アンケートへ進む</a></h3>
+                    <h3><a href="{% url 'servey_form' pk=post.pk %}" class="re_button">{{ post.title }}への申し込みはここをクリック！</a></h3>
                 </div>
             {% endfor %}
         </div>

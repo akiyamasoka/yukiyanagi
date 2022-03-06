@@ -3,6 +3,7 @@
 {% block content %}
     <div class="servey_form">
         <h1>システム利用後アンケート</h1>
+        <p>申し込み前にこちらのアンケートにお応えください！</p>
         <form method="POST" class="post-form">
             {% csrf_token %}
             {{ form.as_p }}

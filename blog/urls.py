@@ -13,4 +13,5 @@ urlpatterns = [
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
     path('servey/<int:pk>/', views.servey_form, name='servey_form'),
     path('post_place/<int:pk>/', views.post_place, name='post_place')
+    path('servey/', views.servey_form_ex, name='servey_form_ex'),
 ]

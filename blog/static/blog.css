@@ -2,7 +2,7 @@
 .page-header, .page-footer {
     background-color: white;
     color: black;
-    font-size: 5pt;
+    font-size: 10pt;
     margin: 1%;
     padding: 1%;
     margin-left: 5%;
@@ -113,7 +113,7 @@ a.btn-radius-solid:hover {
     background: yellow;
     border-color: black;
     color: black;
-    font-size: 10pt;
+    font-size: 20pt;
     text-decoration: none;
 }
 
@@ -135,16 +135,16 @@ a.btn-radius-solid:hover {
     padding-left: 60%;
     padding-right: 10%;
     text-align: left;
-    font-size: 9pt;
+    font-size: 14pt;
 }
 
 .purpose_document h1 {
-    font-size: 16pt;
+    font-size: 18pt;
     margin-top: 10%;
 }
 
 .purpose_document h2 {
-    font-size: 10pt;
+    font-size: 14pt;
     margin: 3%;
 }
 
@@ -206,7 +206,7 @@ a.btn-radius-solid:hover {
     justify-content: center;
     align-items: center;
     color: black;
-    font-size: 20pt;
+    font-size: 60pt;
     text-decoration: none;
 }
 
@@ -241,6 +241,12 @@ a.btn-radius-solid:hover {
 
 .servey_form h1, .apply h1 {
     font-size: 24pt;
+    text-align: center;
+    width: 100%;
+}
+
+.servey_form p {
+    font-size: 16pt;
     text-align: center;
     width: 100%;
 }
@@ -300,7 +306,7 @@ a.btn-radius-solid:hover {
     padding-left: auto;
     padding-right: auto;
     text-align: center;
-    font-size: 12pt;
+    font-size: 16pt;
     color: black;
     margin: 0px;
     clear: both;
@@ -340,7 +346,7 @@ a.btn-radius-solid:hover {
 
 .result_lists, .result_list p {
     text-decoration: none;
-    font-size: 16pt;
+    font-size: 25pt;
     color: red;
     clear: both;
 }

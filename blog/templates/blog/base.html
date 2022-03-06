@@ -14,8 +14,8 @@
             <h1>創価大学GCP多様性グループ</h1>
             <p><a href="/" class="btn btn-radius-solid"><span>ホーム</span></a></p>
             <p><a href="/#purpose" class="btn btn-radius-solid"><span>概要</span></a></p>
-            <p><a href="/" class="btn btn-radius-solid"><span>ご要望</span></a></p>
-            <p><a href="/" class="btn btn-radius-solid"><span>システム利用後アンケート</span></a></p>
+            <p><a href="{% url 'servey_form_ex' %}" class="btn btn-radius-solid"><span>ご要望</span></a></p>
+            <p><a href="{% url 'servey_form_ex' %}" class="btn btn-radius-solid"><span>システム利用後アンケート</span></a></p>
         </div>
         <p></p>
         {% if user.is_authenticated %}
