@@ -87,8 +87,8 @@ def servey_form_ex(request):
         form = ServeyForm(request.POST)
         if form.is_valid():
             servey = form.save(commit=False)
-            servey.link = post.link
-            servey.institution = post.title
+            servey.link = "none"
+            servey.institution = "none"
             servey.published_date = timezone.now()
             servey.save()
             form.save_m2m()
