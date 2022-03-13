@@ -12,8 +12,9 @@
                 </div>
             {% endfor %}
         </div>
-        <input type="button" value="戻る" onClick="javascript:history.go(-1);">
         <p class="blanck"></p>
-        <a href="{{request.META.HTTP_REFERER}}">戻る</a>
+        <div class="center">
+            <input type="button" value="戻る" onClick="javascript:history.go(-1);">
+        </div>
     </div>
 {% endblock %}
