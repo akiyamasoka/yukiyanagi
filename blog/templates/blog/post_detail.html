@@ -6,7 +6,10 @@
         <p>回答が送信されました</p>
         <p>ご協力ありがとうございました</p>
         <div class="apply_button">
-            <p><a href="{% url 'post_place' pk=post.pk %}" class="app_button">学内機関の場所・利用方法を見る</a></p>
+            <p><a href="{% url 'post_place' pk=post.pk %}" class="app_button">学内機関の場所・利用方法をもう一度確認する</a></p>
+        </div>
+        <div class="apply_button">
+            <p><a href="{{ post.link }}" class="re_button">Webページに移動する</a></p>
         </div>
         <p><a href="/">トップページに戻る</a></p>
     </div>

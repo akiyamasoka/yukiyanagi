@@ -71,9 +71,10 @@
                     </div>
                 {% endif %}
                 <div class="result_button">
-                    <p>※{{ post.title }}の申込ボタンは、</p>
-                    <p>アンケート終了後に出てきます！</p>
-                    <h3><a href="{% url 'servey_form' pk=post.pk %}" class="re_button">{{ post.title }}への申し込みはここをクリック！</a></h3>
+                    <p>※このWEBサイトは試験運用中です。</p>
+                    <p>申し込み方法を確認した後、</p>
+                    <p>アンケートにご協力ください！</p>
+                    <h3><a href="{% url 'post_place' pk=post.pk %}" class="app_button">{{ post.title }}への申し込みを見る</a></h3>
                 </div>
             {% endfor %}
         </div>
