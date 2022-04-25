@@ -81,7 +81,9 @@ def post_place(request, pk):
     post = get_object_or_404(Post, pk=pk)
     return render(request, 'blog/post_place.html', {'post': post})
     
-
+def post_place_re(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    return render(request, 'blog/post_place_re.html', {'post': post})
     
 def servey_form_ex(request):
     if request.method == "POST":

@@ -9,8 +9,9 @@
             <p><a href="{% url 'post_place' pk=post.pk %}" class="app_button">学内機関の場所・利用方法をもう一度確認する</a></p>
         </div>
         <div class="apply_button">
-            <p><a href="{{ post.link }}" class="re_button">Webページに移動する</a></p>
+            <p><a href="{{ post.link }}" class="app_button">ポータルサイト、または学内機関サイトに移動する</a></p>
         </div>
+        <p><a href="{% url 'post_place_re' pk=post.pk %}">学内機関の場所・利用方法をもう一度確認する</a></p>
         <p><a href="/">トップページに戻る</a></p>
     </div>
 {% endblock %}
