@@ -66,7 +66,7 @@ class Servey_re(models.Model):
     question_understanding = models.ManyToManyField(TwoChoices, verbose_name='本WEBサイトを利用することによって、申し込み方法を理解することはできましたか？')
     question_suitable = models.ManyToManyField(ThreeChoices, verbose_name='あなたの「困った」を解決するために適切な学内機関が提示されたと思いますか？')
     question_changes = models.ManyToManyField(ThreeChoices_re, verbose_name='今までと比べて、学内機関の利用のしやすさに変化はありましたか？')
-    question_reasons = models.TextField('上記の具体的な理由をお書きください', default="特になし")
+    question_reasons = models.TextField('上記の具体的な理由をお書きください', default=" ")
     question_requests = models.TextField('WEB各機能に対する感想・ご意見・ご要望（学生体験談、申し込み方法の提示、説明の口調やサイトデザイン・レイアウト等について）')
     
     institution = models.CharField(max_length=200, default="交通事故報告")
