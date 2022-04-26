@@ -16,13 +16,13 @@ class Servey_reAdmin(admin.ModelAdmin):
     ordering = ('-institution',)
 
     def _question_already(self, row):
-        return ','.join([x.name for x in row.needs.all()])
+        return ','.join([x.name for x in row.question_already.all()])
     def _question_understanding(self, row):
-        return ','.join([x.name for x in row.needs.all()])
+        return ','.join([x.name for x in row.question_understanding.all()])
     def _question_suitable(self, row):
-        return ','.join([x.name for x in row.needs.all()])
+        return ','.join([x.name for x in row.question_suitable.all()])
     def _question_changes(self, row):
-        return ','.join([x.name for x in row.needs.all()])
+        return ','.join([x.name for x in row.question_changes.all()])
     
 class PostAdmin(admin.ModelAdmin):
     list_display = ('title', 'tag', 'text', 'voice_first', 'voice_second', 'voice_third', 'place', 'screenshot', 'maps')
