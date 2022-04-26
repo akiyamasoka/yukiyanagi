@@ -1,6 +1,6 @@
 from django import forms
 
-from .models import Post, Servey, Servey_re, Tag, YesOrNo, ThreeChoices, ThreeChoices_re
+from .models import Post, Servey, Servey_re, Tag, YesOrNo, TwoChoices, ThreeChoices, ThreeChoices_re
 
 class PostForm(forms.ModelForm):
 

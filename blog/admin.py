@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Post, Servey, Servey_re, Tag, YesOrNo, ThreeChoices, ThreeChoices_re
+from .models import Post, Servey, Servey_re, Tag, YesOrNo, TwoChoices, ThreeChoices, ThreeChoices_re
 
 #class ServeyAdmin(admin.ModelAdmin):
 	#list_display = ('student_number','_needs','question','institution','published_date')
@@ -33,6 +33,7 @@ admin.site.register(Post, PostAdmin)
 admin.site.register(Servey_re,Servey_reAdmin)
 admin.site.register(Tag)
 admin.site.register(YesOrNo)
+admin.site.register(TwoChoices)
 admin.site.register(ThreeChoices)
 admin.site.register(ThreeChoices_re)
 
