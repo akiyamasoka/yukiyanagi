@@ -1,8 +1,8 @@
 from django.shortcuts import redirect, render, get_object_or_404
 from django.utils import timezone
 from django.db.models import Q
-from .models import Post, Servey
-from .forms import PostForm, ServeyForm
+from .models import Post, Servey, Servey_re
+from .forms import PostForm, Servey_reForm
 
 def main(request):
 	return render(request, 'blog/main.html')
@@ -64,7 +64,7 @@ def post_edit(request, pk):
 def servey_form(request, pk):
     post = get_object_or_404(Post, pk=pk)
     if request.method == "POST":
-        form = ServeyForm(request.POST)
+        form = Servey_reForm(request.POST)
         if form.is_valid():
             servey = form.save(commit=False)
             servey.institution = post.title
@@ -73,7 +73,7 @@ def servey_form(request, pk):
             form.save_m2m()
             return redirect('post_detail', pk=post.pk)
     else:
-        form = ServeyForm()
+        form = Servey_reForm()
     return render(request, 'blog/servey_form.html', {'form': form})
     
 def post_place(request, pk):
@@ -86,7 +86,7 @@ def post_place_re(request, pk):
     
 def servey_form_ex(request):
     if request.method == "POST":
-        form = ServeyForm(request.POST)
+        form = Servey_reForm(request.POST)
         if form.is_valid():
             servey = form.save(commit=False)
             servey.institution = "none"
@@ -95,7 +95,7 @@ def servey_form_ex(request):
             form.save_m2m()
             return redirect('main')
     else:
-        form = ServeyForm()
+        form = Servey_ReForm()
     return render(request, 'blog/servey_form_ex.html', {'form': form})
     
     
