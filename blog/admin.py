@@ -12,7 +12,7 @@ from .models import Post, Servey, Servey_re, Tag, YesOrNo, TwoChoices, ThreeChoi
 
     
 class Servey_reAdmin(admin.ModelAdmin):
-    list_display = ('_question_already','_question_understanding','_question_suitable','_question_changes','question_reasons','question_requests','institution','published_date')
+    list_display = ('institution','_question_already','_question_understanding','_question_suitable','_question_changes','question_reasons','question_requests','published_date')
     ordering = ('-institution',)
 
     def _question_already(self, row):
