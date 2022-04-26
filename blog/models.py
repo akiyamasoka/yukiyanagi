@@ -45,7 +45,7 @@ class YesOrNo(models.Model):
 class TwoChoices(models.Model):
     name = models.CharField('選択肢名', max_length=255)
     
-    def __str__(seld):
+    def __str__(self):
         return self.name
         
 class ThreeChoices(models.Model):
