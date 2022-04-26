@@ -95,7 +95,7 @@ def servey_form_ex(request):
             form.save_m2m()
             return redirect('main')
     else:
-        form = Servey_ReForm()
+        form = Servey_reForm()
     return render(request, 'blog/servey_form_ex.html', {'form': form})
     
     
