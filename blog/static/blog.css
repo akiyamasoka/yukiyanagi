@@ -422,6 +422,14 @@ a.btn-radius-solid:hover {
     padding-bottom: 3%;
 }
 
+.result_tit img {
+    float: left;
+    width: 16%;
+    margin-top: -2%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
 .result_tit p {
     float: left;
 }
