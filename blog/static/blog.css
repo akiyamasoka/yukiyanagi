@@ -199,11 +199,8 @@ a.btn-radius-solid:hover {
 }
 
 .post p {
-    width: 80%;
     height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-left: 9%;
 }
 
 .post_button {
@@ -217,6 +214,11 @@ a.btn-radius-solid:hover {
     color: black;
     font-size: 40pt;
     text-decoration: none;
+}
+
+.post img {
+    margin-top: 20%;
+    margin-left: -39%;
 }
 
 .post_second {

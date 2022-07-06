@@ -15,13 +15,13 @@
                             <img src="{% static 'Way.jpg' %}" />
                         </a>
                     {% endif %}
-                    {% if post.title == 生活 %}
+                    {% if post.title == "生活" %}
                         <a href="{% url 'mid_post_list' pk=post.pk %}" class="post_button">
                             <p>{{ post.title }}</p>
                             <img src="{% static 'Life.jpg' %}" />
                         </a>
                     {% endif %}
-                    {% if post.title == 学習 %}
+                    {% if post.title == "学習" %}
                         <a href="{% url 'mid_post_list' pk=post.pk %}" class="post_button">
                             <p>{{ post.title }}</p>
                             <img src="{% static 'Study.jpg' %}" />
