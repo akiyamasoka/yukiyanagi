@@ -331,9 +331,11 @@ a.btn-radius-solid:hover {
     width: 70%;
     padding-left: 5%;
     text-align: left;
-    margin: 2%;
     color: black;
-    float: left;
+}
+
+.result h2 {
+    margin-top: -1%;
 }
 
 .make_blank {
@@ -363,8 +365,8 @@ a.btn-radius-solid:hover {
 
 .result_tit {
     background-color: #ffc286;
-    padding-top: 7%;
-    padding-bottom: 7%;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 .result_tit p {
@@ -374,6 +376,8 @@ a.btn-radius-solid:hover {
 .result_tit h1 {
     background-color: #ffc286;
     font-size: 40pt;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 
