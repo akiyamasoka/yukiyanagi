@@ -3,33 +3,41 @@
 
 {% block content %}
         <div class="result">
-            <div class="result_title">
-                <h1>○マッチング結果</h1>
-                <p class="blanck"></p>
-                <p>あなたには...</p>
-            </div>
-            <div class="result_list">
-                {% for post in posts %}
-                    <p><a href="#id_{{ post.title }}" class="result_lists">{{ post.title }}</a></p>
-                {% endfor %}
-            </div>
-            <div class="result_title">
-                <p>がマッチングしました</p>
-                <div class="make_blank">
-                    <p>※赤字をクリックするとそのサービスの説明を見ることができるよ！</p>
-                    <p>※学内機関への申込ボタンは、</p>
-                    <p>アンケート終了後に出てきます！</p>
+            <!--
+                <div class="result_title">
+                    <h1>○マッチング結果</h1>
+                    <p class="blanck"></p>
+                    <p>あなたには...</p>
                 </div>
-            </div>
+                <div class="result_list">
+                    {% for post in posts %}
+                        <p><a href="#id_{{ post.title }}" class="result_lists">{{ post.title }}</a></p>
+                    {% endfor %}
+                </div>
+                <div class="result_title">
+                    <p>がマッチングしました</p>
+                    <div class="make_blank">
+                        <p>※赤字をクリックするとそのサービスの説明を見ることができるよ！</p>
+                        <p>※学内機関への申込ボタンは、</p>
+                        <p>アンケート終了後に出てきます！</p>
+                    </div>
+                </div>
+            -->
             {% for post in posts %}
+                <div class="result_tit">
+                    <p> </p>
+                    <h1>{{ post.title }}</h1>
+                </div>
                 <div class="result_detail"><a id="id_{{ post.title }}"></a>
-                    <h1>○【{{ post.title }}】とは？</h1>
+                    <h2> </h2>
+                    <h1>{{ post.title }}とは？</h1>
                     <p class="blanck"></p>
                     <p>{{ post.text|linebreaksbr }}</p>
                 </div>
                 {% if post.voice_first != "準備中です" %}
                     <div class="result_voice">
-                        <h1>○【{{ post.title }}】を利用した人の声</h1>
+                        <h2> </h2>
+                        <h1>利用者の声</h1>
                         <p class="blanck"></p>
                         <div class="balloon">
                             <div class="voice">
@@ -70,10 +78,13 @@
                     </div>
                 {% endif %}
                 <div class="result_button">
+                    <h3><a href="{% url 'post_place' pk=post.pk %}" class="app_button">{{ post.title }}への申し込みを見る</a></h3>
                     <p>※このWEBサイトは試験運用中です。</p>
                     <p>申し込み方法を確認した後、</p>
                     <p>アンケートにご協力ください！</p>
-                    <h3><a href="{% url 'post_place' pk=post.pk %}" class="app_button">{{ post.title }}への申し込みを見る</a></h3>
+                    <p>アンケート終了後、ポータルサイトに移動します。</p>
+                    <p>お申し込みの場合は、ここで表示された申し込み方法を覚えていただいた後、</p>
+                    <p>移動したポータルサイトでのお申し込みをよろしくお願いいたします。</p>
                 </div>
             {% endfor %}
         </div>
