@@ -200,7 +200,7 @@ a.btn-radius-solid:hover {
 
 .post p {
     height: 80%;
-    margin-left: 9%;
+    margin-left: 11%;
 }
 
 .post_button {
@@ -218,7 +218,11 @@ a.btn-radius-solid:hover {
 
 .post img {
     margin-top: 20%;
-    margin-left: -39%;
+    margin-left: -43.5%;
+}
+
+.post_button {
+    width: 90%;
 }
 
 .post_second {
