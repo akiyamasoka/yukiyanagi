@@ -6,11 +6,26 @@
             <h1>あなたの悩みを教えてね</h1>
         </div>
         <div class="posts">
-            {% for post in posts %}
-                <div class="post">
-                    <p><a href="{% url 'mid_post_list' pk=post.pk %}" class="post_button">{{ post.title }}</a></p>
-                </div>
-            {% endfor %}
+            <div class="post">
+                {% if post.title == 進路 %}
+                    <a href="{% url 'mid_post_list' pk=post.pk %}" class="post_button">
+                        <p>{{ post.title }}</p>
+                        <img src="{% static 'Way.jpg' %}" />
+                    </a>
+                {% endif %}
+                {% if post.title == 生活 %}
+                    <a href="{% url 'mid_post_list' pk=post.pk %}" class="post_button">
+                        <p>{{ post.title }}</p>
+                        <img src="{% static 'Life.jpg' %}" />
+                    </a>
+                {% endif %}
+                {% if post.title == 学習 %}
+                    <a href="{% url 'mid_post_list' pk=post.pk %}" class="post_button">
+                        <p>{{ post.title }}</p>
+                        <img src="{% static 'Study.jpg' %}" />
+                    </a>
+                {% endif %}
+            </div>
         </div>
         <p class="blanck"></p>
         <div class="center">

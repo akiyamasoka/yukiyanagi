@@ -7,8 +7,8 @@
         </div>
         <div class="posts">
             {% for post in posts %}
-                <div class="post">
-                    <p><a href="{% url 'post_result' pk=post.pk %}" class="post_button">{{ post.title }}</a></p>
+                <div class="post_third">
+                    <p><a href="{% url 'post_result' pk=post.pk %}" class="post_button_third">{{ post.title }}</a></p>
                 </div>
             {% endfor %}
         </div>
