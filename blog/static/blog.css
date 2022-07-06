@@ -327,7 +327,7 @@ a.btn-radius-solid:hover {
 }
 
 .result h1 {
-    font-size: 16pt;
+    font-size: 20pt;
     width: 70%;
     padding-left: 5%;
     text-align: left;
@@ -336,6 +336,8 @@ a.btn-radius-solid:hover {
 
 .result h2 {
     margin-top: -1%;
+    float: left;
+    color: #bac6a6;
 }
 
 .make_blank {
@@ -385,6 +387,7 @@ a.btn-radius-solid:hover {
     padding-left: 10%;
     padding-right: 10%;
     margin-top: 2%;
+    padding-bottom: 4%;
     text-align: left;
 }
 
@@ -405,7 +408,7 @@ a.btn-radius-solid:hover {
 
 .balloon {
     width: 90%;
-    margin: 5%;
+    margin-left: 5%;
     overflow: hidden;
 }
 
@@ -441,7 +444,8 @@ a.btn-radius-solid:hover {
     margin: 5px 0 0 105px;
     padding: 17px 13px;
     border-radius: 12px;
-    background: #d7ebfe;
+    background: white;
+    border-color: black;
 }
 
 .says:after {
@@ -468,6 +472,8 @@ a.btn-radius-solid:hover {
 
 .result_button {
     padding-top: 3%;
+    text-align: left;
+    padding-left: 10%;
 }
 
 .re_button {
@@ -475,9 +481,9 @@ a.btn-radius-solid:hover {
     height: 30%;
     margin-left: auto;
     margin-right: auto;
-    background: yellow;
+    background: #ffc286;
     border-color: black;
-    border-radius: 90%;
+    border-radius: 10pt;
     display: flex;
     justify-content: center;
     align-items: center;
