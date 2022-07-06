@@ -25,18 +25,18 @@
             -->
             {% for post in posts %}
                 <div class="result_tit">
-                    <p> </p>
+                    <p>\</p>
                     <h1>{{ post.title }}</h1>
                 </div>
                 <div class="result_detail"><a id="id_{{ post.title }}"></a>
-                    <h2> </h2>
+                    <h2>|</h2>
                     <h1>{{ post.title }}とは？</h1>
                     <p class="blanck"></p>
                     <p>{{ post.text|linebreaksbr }}</p>
                 </div>
                 {% if post.voice_first != "準備中です" %}
                     <div class="result_voice">
-                        <h2> </h2>
+                        <h2>|</h2>
                         <h1>利用者の声</h1>
                         <p class="blanck"></p>
                         <div class="balloon">
@@ -77,6 +77,117 @@
                         </div>
                     </div>
                 {% endif %}
+                <div class="result_title">
+                    <h2>|</h2>
+                    <p>{{ post.place }}</p>
+                    {% if post.maps == "学生課" %}
+                        <div class="illustration">
+                            <img src="{% static '学生課.jpg' %}" />
+                        </div>
+                    {% endif %}
+                    {% if post.maps == "SPACe" %}
+                        <div class="illustration">
+                            <img src="{% static 'SPACe.jpg' %}" />
+                        </div>
+                    {% endif %}
+                    {% if post.maps == "キャリアセンター" %}
+                        <div class="illustration">
+                            <img src="{% static 'キャリアセンター.jpg' %}" />
+                        </div>
+                    {% endif %}
+                    {% if post.maps == "キャリアデザインステーション" %}
+                        <div class="illustration">
+                            <img src="{% static 'キャリアデザインステーション.jpg' %}" />
+                        </div>
+                    {% endif %}
+                    {% if post.maps == "学生相談室" %}
+                        <div class="illustration">
+                            <img src="{% static '学生相談室.jpg' %}" />
+                        </div>
+                    {% endif %}
+                    {% if post.maps == "教務課" %}
+                        <div class="illustration">
+                            <img src="{% static '教務課.jpg' %}" />
+                        </div>
+                    {% endif %}
+                    {% if post.maps == "国際課" %}
+                        <div class="illustration">
+                            <img src="{% static '国際課.jpg' %}" />
+                        </div>
+                    {% endif %}
+                    {% if post.maps == "障害学生支援室" %}
+                        <div class="illustration">
+                            <img src="{% static '障害学生支援室.jpg' %}" />
+                        </div>
+                    {% endif %}
+                    {% if post.maps == "保健センター" %}
+                        <div class="illustration">
+                            <img src="{% static '保健センター.jpg' %}" />
+                        </div>
+                    {% endif %}
+                </div>
+                {% if post.screenshot == True %}
+                    {% if post.title == "SPACeレポートチュータリング" %}
+                        <div class="result_detail">
+                            <h1>○【{{ post.title }}】の予約方法</h1>
+                            <p class="blanck"></p>
+                            <p>①創価大学ポータルサイトにあなたのアカウントで入ってね</p>
+                            <p>②「ツール・リンク集」から「各種支援サービス申込み」、「レポートチュータリング予約」をクリック！</p>
+                            <div class="screenshot_image">
+                                <img src="{% static 'レポートチュータリング.jpg' %}" />
+                            </div>
+                        </div>
+                    {% elif post.title == "SPACeレポート診断" %}
+                        <div class="result_detail">
+                            <h1>○【{{ post.title }}】の予約方法</h1>
+                            <p class="blanck"></p>
+                            <p>①創価大学ポータルサイトにあなたのアカウントで入ってね</p>
+                            <p>②「ツール・リンク集」から「各種支援サービス申込み」、「レポート診断予約」をクリック！</p>
+                            <div class="screenshot_image">
+                                <img src="{% static 'レポート診断.jpg' %}" />
+                            </div>
+                        </div>
+                    {% elif post.title == "国際課　留学情報ステーション" %}
+                        <div class="result_detail">
+                            <h1>○【{{ post.title }}】の予約方法</h1>
+                            <p class="blanck"></p>
+                            <p>①創価大学ポータルサイトにあなたのアカウントで入ってね</p>
+                            <p>②「ツール・リンク集」から「留学情報ステーションONLINE」をクリック！</p>
+                            <div class="screenshot_image">
+                                <img src="{% static '留学情報ステーション.jpg' %}" />
+                            </div>
+                        </div>
+                    {% else %}
+                        <div class="result_detail">
+                            <h1>○【{{ post.title }}】の予約方法</h1>
+                            <p class="blanck"></p>
+                            <p>①創価大学ポータルサイトにあなたのアカウントで入ってね</p>
+                            <p>②「オンラインサービス特集」をクリック！</p>
+                            <div class="screenshot_image">
+                                <img src="{% static 'screenshot_normal1.jpg' %}" />
+                            </div>
+                            <p>③あなたにマッチした学内機関をスクロールして見つける</p>
+                            <div class="screenshot_image">
+                                <img src="{% static 'screenshot_normal2.jpg' %}" />
+                            </div>
+                            <p>④あなたにマッチした学内機関が見つかったら「利用する」をクリック！その機関の説明に沿って、機関を利用してみてね</p>
+                            <div class="screenshot_image">
+                                <img src="{% static 'screenshot_normal3.jpg' %}" />
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endif %}
+                <div class="result_button">
+                    <p>※このWEBサイトは試験運用中です。</p>
+                    <p>申し込み方法を確認した後、</p>
+                    <p>アンケートにご協力ください！</p>
+                    <p>アンケート終了後、ポータルサイトに移動します。</p>
+                    <p>お申し込みの場合は、ここで表示された申し込み方法を覚えていただいた後、</p>
+                    <p>移動したポータルサイトでのお申し込みをよろしくお願いいたします。</p>
+                    <h3><a href="{% url 'servey_form' pk=post.pk %}" class="re_button">アンケートに回答する</a></h3>
+                </div>
+            </div>
+            
                 <div class="result_button">
                     <h3><a href="{% url 'post_place' pk=post.pk %}" class="app_button">{{ post.title }}への申し込みを見る</a></h3>
                     <p>※このWEBサイトは試験運用中です。</p>
