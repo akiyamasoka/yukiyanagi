@@ -8,28 +8,30 @@
         </div>
         <div class="posts">
             {% for post in posts %}
-                <div class="post">
-                    <div class="post_button">
-                        {% if post.title == "進路" %}
-                            <a href="{% url 'mid_post_list' pk=post.pk %}" class="post_button">
-                                <p>{{ post.title }}</p>
-                                <img src="{% static 'Way.jpg' %}" />
-                            </a>
-                        {% endif %}
-                        {% if post.title == "生活" %}
-                            <a href="{% url 'mid_post_list' pk=post.pk %}" class="post_button">
-                                <p>{{ post.title }}</p>
-                                <img src="{% static 'Life.jpg' %}" />
-                            </a>
-                        {% endif %}
-                        {% if post.title == "学習" %}
-                            <a href="{% url 'mid_post_list' pk=post.pk %}" class="post_button">
-                                <p>{{ post.title }}</p>
-                                <img src="{% static 'Study.jpg' %}" />
-                            </a>
-                        {% endif %}
+                {% if post.title == "進路" %}
+                    <div class="post_one">
+                        <a href="{% url 'mid_post_list' pk=post.pk %}" class="post_button">
+                            <p>{{ post.title }}</p>
+                            <img src="{% static 'Way.jpg' %}" />
+                        </a>
                     </div>
-                </div>
+                {% endif %}
+                {% if post.title == "生活" %}
+                    <div class="post_two">
+                        <a href="{% url 'mid_post_list' pk=post.pk %}" class="post_button">
+                            <p>{{ post.title }}</p>
+                            <img src="{% static 'Life.jpg' %}" />
+                        </a>
+                    </div>
+                {% endif %}
+                {% if post.title == "学習" %}
+                    <div class="post_three">
+                        <a href="{% url 'mid_post_list' pk=post.pk %}" class="post_button">
+                            <p>{{ post.title }}</p>
+                            <img src="{% static 'Study.jpg' %}" />
+                        </a>
+                    </div>
+                {% endif %}
             {% endfor %}
         </div>
         <p class="blanck"></p>

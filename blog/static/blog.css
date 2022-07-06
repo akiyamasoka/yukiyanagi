@@ -188,7 +188,7 @@ a.btn-radius-solid:hover {
     clear: both;
 }
 
-.post {
+.post_one {
     width: 33%;
     height: 40%;
     float: left;
@@ -198,7 +198,27 @@ a.btn-radius-solid:hover {
     position: relative;
 }
 
-.post p {
+.post_two {
+    width: 33%;
+    height: 40%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.post_three {
+    width: 33%;
+    height: 40%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.post_ome p, post_two p, post_three p {
     height: 80%;
     margin-left: 20%;
 }
@@ -496,8 +516,7 @@ a.btn-radius-solid:hover {
 }
 
 .voice {
-    margin-top: 3%;
-    margin-bottom: 3%;
+    padding-bottom: 3%;
     overflow: auto;
     display: flex;
     align-items: flex-end;
